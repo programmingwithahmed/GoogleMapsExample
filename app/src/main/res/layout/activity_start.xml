@@ -22,5 +22,11 @@
         android:text="Map with Route" />
 
 
+    <Button
+        android:id="@+id/btn_online_image_with_marker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Online image with marker" />
+
 
 </LinearLayout>

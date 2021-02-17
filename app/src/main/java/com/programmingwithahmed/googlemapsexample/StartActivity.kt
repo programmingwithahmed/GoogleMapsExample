@@ -32,6 +32,13 @@ class StartActivity : AppCompatActivity() {
 
             }
 
+            btnOnlineImageWithMarker.setOnClickListener {
+
+                val intent = Intent(this@StartActivity, MapsActivity3::class.java)
+                startActivity(intent)
+
+            }
+
         }
     }
 }

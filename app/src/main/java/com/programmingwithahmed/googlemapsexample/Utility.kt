@@ -3,20 +3,34 @@ package com.programmingwithahmed.googlemapsexample
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import android.graphics.drawable.BitmapDrawable
 import androidx.annotation.DrawableRes
-import androidx.core.content.res.ResourcesCompat
-import androidx.core.graphics.drawable.toBitmap
 
 class Utility {
 
     companion object {
 
-         fun createScaledBitmap(context: Context, @DrawableRes icon: Int, width: Int, height: Int) : Bitmap {
+        fun createScaledBitmap(
+            context: Context,
+            @DrawableRes icon: Int,
+            width: Int,
+            height: Int
+        ): Bitmap {
 
-             val bitmap = BitmapFactory.decodeResource(context.resources, icon)
+            val bitmap = BitmapFactory.decodeResource(context.resources, icon)
 
             return Bitmap.createScaledBitmap(bitmap, width, height, false)
+        }
+
+
+        fun readTextFile(context: Context, filePath: String) : String {
+
+            var result = ""
+            context.assets.open(filePath).apply {
+               result = this.readBytes().toString(Charsets.UTF_8)
+            }.close()
+
+
+            return result
         }
 
     }
