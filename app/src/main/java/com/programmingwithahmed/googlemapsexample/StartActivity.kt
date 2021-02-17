@@ -25,6 +25,12 @@ class StartActivity : AppCompatActivity() {
 
             }
 
+            btnMapWithRoute.setOnClickListener {
+
+                val intent = Intent(this@StartActivity, MapsActivity2::class.java)
+                startActivity(intent)
+
+            }
 
         }
     }
