@@ -17,6 +17,7 @@
         <activity android:name=".MapsActivity"/>
         <activity android:name=".MapsActivity2"/>
         <activity android:name=".MapsActivity3"/>
+        <activity android:name=".MapsActivity4"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

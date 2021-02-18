@@ -39,6 +39,14 @@ class StartActivity : AppCompatActivity() {
 
             }
 
+
+            btnMapWithMarkerInfo.setOnClickListener {
+
+                val intent = Intent(this@StartActivity, MapsActivity4::class.java)
+                startActivity(intent)
+
+            }
+
         }
     }
 }

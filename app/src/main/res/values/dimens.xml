@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_dialog_circle">30dp</dimen>
+    <dimen name="margin_page_title">8dp</dimen>
+    <dimen name="margin_dialog_title">8dp</dimen>
+    <dimen name="margin_dialog_views">8dp</dimen>
+
+
+
+    <dimen name="padding_dialog">8dp</dimen>
+    <dimen name="padding_dialog_big">50dp</dimen>
+
+</resources>

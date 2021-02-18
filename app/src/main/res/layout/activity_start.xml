@@ -28,5 +28,10 @@
         android:layout_height="wrap_content"
         android:text="Online image with marker" />
 
+    <Button
+        android:id="@+id/btn_map_with_marker_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Map with Marker Info" />
 
 </LinearLayout>
