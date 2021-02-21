@@ -41,4 +41,12 @@
         android:layout_height="wrap_content"
         android:text="Map with Marker Animation" />
 
+
+    <Button
+        android:id="@+id/btn_location_updates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get user location updates" />
+
+
 </LinearLayout>

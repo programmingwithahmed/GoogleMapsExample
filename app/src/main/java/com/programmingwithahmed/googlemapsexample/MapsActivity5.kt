@@ -51,6 +51,7 @@ class MapsActivity5 : AppCompatActivity(), OnMapReadyCallback{
             showPath(MapUtil.getListOfLocations())
             showMovingCab(MapUtil.getListOfLocations())
         }
+
     }
 
 
@@ -149,6 +150,7 @@ class MapsActivity5 : AppCompatActivity(), OnMapReadyCallback{
             currentLatLng = latLng
             val valueAnimator = AnimationUtil.carAnimator()
             valueAnimator.addUpdateListener { va ->
+
                 if (currentLatLng != null && previousLatLng != null) {
                     val multiplier = va.animatedFraction
                     val nextLocation = LatLng(

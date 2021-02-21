@@ -55,6 +55,13 @@ class StartActivity : AppCompatActivity() {
 
             }
 
+            btnLocationUpdates.setOnClickListener {
+
+                val intent = Intent(this@StartActivity, MapsActivity6::class.java)
+                startActivity(intent)
+
+            }
+
         }
     }
 }
